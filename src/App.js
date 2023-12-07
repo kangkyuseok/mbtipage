@@ -1,11 +1,11 @@
 import React from 'react';
-import Calendar from './components/Calendar';
+import CalendarFunction from './components/CalendarFunction';
 
 const App = () => {
   return (
     <div>
       <h1>벙 게시판</h1>
-      <Calendar />
+      <CalendarFunction />
     </div>
   );
 };
