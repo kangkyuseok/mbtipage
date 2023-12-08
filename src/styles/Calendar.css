@@ -1,0 +1,106 @@
+
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.header h2 {
+  font-size: 18px;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.days .day { 
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 5px;
+
+}
+
+.cells {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cells .week {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+}
+
+.cells .cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.cells .cell.today {
+  background-color: #f2f2f2;
+}
+
+.cells .cell.disabled {
+  background-color: #ddd;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.cells .day-of-week {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.cells .day-of-week.today {
+  background-color: #f2f2f2;
+}
+
+.cells .day-of-week.disabled {
+  background-color: #ddd;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.selected-week {
+  background-color: lightblue; /* 예시: 선택된 주의 날짜에 적용될 배경색 */
+}
